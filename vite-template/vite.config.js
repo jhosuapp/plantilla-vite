@@ -4,9 +4,9 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, 'sources/js/main.js'),
-      name: 'MyLib',
-      fileName: 'my-lib'
+      entry: resolve(__dirname, 'sources/js/app.js'),
+      name: 'Mainscript',
+      fileName: 'mainscript'
     },
     rollupOptions: {
       // Asegúrate de externalizar las dependencias que no deberían estar empaquetadas

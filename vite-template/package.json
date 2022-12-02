@@ -1,13 +1,14 @@
 {
-  "name": "my-lib",
+  "name": "mainscript",
   "type": "module",
   "files": ["dist"],
-  "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js",
+  "main": "./dist/mainscript.umd.cjs",
+  "module": "./dist/mainscript.js",
+  "private": true,
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/mainscript.js",
+      "require": "./dist/mainscript.umd.cjs"
     }
   },
   "scripts": {
