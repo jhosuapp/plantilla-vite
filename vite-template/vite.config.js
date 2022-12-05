@@ -1,5 +1,6 @@
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
+import babel from 'vite-plugin-babel';
 
 export default defineConfig({
   build: {
@@ -10,10 +11,20 @@ export default defineConfig({
     },
     devtool: 'source-map',
     watch: true,
+    target: "es2015",
     rollupOptions: {
       output: {
         assetFileNames: "css/main.css",
       },
     },
+    plugins: [
+      babel({
+        babelConfig: {
+            babelrc: false,
+            configFile: false,
+            plugins: ['@babel/plugin-proposal-decorators']
+            }
+        }),
+    ],
   },
 });
