@@ -11,7 +11,7 @@ export default defineConfig({
     },
     devtool: 'source-map',
     watch: true,
-    target: "es2015",
+    target: "es5",
     rollupOptions: {
       output: {
         assetFileNames: "css/main.css",
