@@ -1,3 +1,3 @@
 export const mifuncion = ()=>{
-    console.log('holas funciona');
+    console.log('holass funciona');
 }

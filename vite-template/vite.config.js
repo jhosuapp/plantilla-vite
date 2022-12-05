@@ -1,16 +1,22 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import { ViteMinifyPlugin } from 'vite-plugin-minify'
 
 export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'sources/js/app.js'),
       name: 'Mainscript',
-      fileName: 'mainscript'
+      fileName: 'js/mainscript'
     },
+    devtool: 'source-map',
+    watch: true,
     rollupOptions: {
-      // Asegúrate de externalizar las dependencias que no deberían estar empaquetadas
-      // en tu librería
-    }
-  }
-})
+      
+    },
+    plugins: [
+      // input https://www.npmjs.com/package/html-minifier-terser options
+      ViteMinifyPlugin({}),
+    ],
+  },
+});
