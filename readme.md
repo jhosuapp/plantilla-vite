@@ -8,14 +8,14 @@ npm install
 Ese comando descargará todas las dependecias y módulos de node necesarios
 
 
-* Cuando haya terminado de instalar todos los node_modules, entonces podremos ejecutar el proyecto de con el siguiente comando:
+* Cuando haya terminado de instalar todos los node_modules, entonces podremos ejecutar el proyecto con el siguiente comando:
+El siguiente comando le desplegara el modo desarrollador
 
 ```
 npm run dev
 ```
-Ese comando le desplegara el modo desarrollador
+El siguiente comando le desplegara el modo producción, actualmente funciona igual que el dev, sí desea que el modo dev le
+genere una vista local con un servidor local debe remover del package.json el "build" dentro del script "dev"
 ```
 npm run build
 ```
-Ese comando le desplegara el modo producción, actualmente funciona igual que el dev, sí desea que el modo dev le
-genere una vista local con un servidor local debe remover del package.json el "build" dentro del script "dev"
