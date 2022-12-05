@@ -1,7 +1,7 @@
 const o = () => {
   console.log("holass funciona");
 }, n = () => {
-  console.log("tssse");
+  console.log("t");
 };
 o();
 n();

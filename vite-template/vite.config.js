@@ -1,6 +1,5 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import { ViteMinifyPlugin } from 'vite-plugin-minify'
 
 export default defineConfig({
   build: {
@@ -12,11 +11,9 @@ export default defineConfig({
     devtool: 'source-map',
     watch: true,
     rollupOptions: {
-      
+      output: {
+        assetFileNames: "css/main.css",
+      },
     },
-    plugins: [
-      // input https://www.npmjs.com/package/html-minifier-terser options
-      ViteMinifyPlugin({}),
-    ],
   },
 });
