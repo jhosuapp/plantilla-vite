@@ -1,8 +1,8 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import babel from 'vite-plugin-babel';
 
 export default defineConfig({
+  root: 'src',
   build: {
     lib: {
       entry: resolve(__dirname, 'sources/js/app.js'),
@@ -17,14 +17,8 @@ export default defineConfig({
         assetFileNames: "css/main.css",
       },
     },
-    plugins: [
-      babel({
-        babelConfig: {
-            babelrc: false,
-            configFile: false,
-            plugins: ['@babel/plugin-proposal-decorators']
-            }
-        }),
-    ],
+    outDir: '../public_html/theme/',
+    emptyOutDir: false,
+    sourcemap: true,
   },
 });

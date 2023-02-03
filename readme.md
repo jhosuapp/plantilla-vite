@@ -1,5 +1,10 @@
+```
+Requerimientos mínimos para el correcto funcionamiento para la instalación
+```
+Tener instalado npm, mínimo versión 18 de node 
+```
 # Sigue los siguientes pasos:
-
+```
 * Lo primero que debemos de hacer después de descargar y descomprimir el código es ejecutar el siguiente comando:
 
 ```
