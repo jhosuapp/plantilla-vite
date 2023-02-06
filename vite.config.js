@@ -9,16 +9,16 @@ export default defineConfig({
       name: 'Mainscript',
       fileName: 'js/mainscript'
     },
-    devtool: 'source-map',
-    watch: true,
-    target: "es2015",
     rollupOptions: {
       output: {
         assetFileNames: "css/main.css",
       },
     },
+    sourcemap: true,
+    devtool: 'source-map',
+    watch: true,
+    target: "es2015",
     outDir: '../public_html/theme/',
     emptyOutDir: false,
-    sourcemap: true,
   },
 });
