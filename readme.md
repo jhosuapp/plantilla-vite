@@ -1,7 +1,5 @@
-```
 Requerimientos mínimos para el correcto funcionamiento para la instalación
-```
-Tener instalado npm, mínimo versión 18 de node 
+Tener instalado npm y mínimo versión 18 de node 
 ```
 # Sigue los siguientes pasos:
 ```
@@ -19,8 +17,7 @@ El siguiente comando le desplegara el modo desarrollador
 ```
 npm run dev
 ```
-El siguiente comando le desplegara el modo producción, actualmente funciona igual que el dev, sí desea que el modo dev le
-genere una vista local con un servidor local debe remover del package.json el "build" dentro del script "dev"
+El siguiente comando le desplegara el modo producción
 ```
 npm run build
 ```
