@@ -1,6 +1,7 @@
-import { mifuncion } from "./modules/test";
+//COMPONENTS
+import { getChildsTest } from "./modules/test";
 import "../sass/main.scss";
 
 window.addEventListener('load', ()=>{
-    mifuncion();
+    getChildsTest();
 });

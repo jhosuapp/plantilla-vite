@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: 'sources',
+  server: {
+    open: '/templates/index.html',
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'sources/js/app.js'),
@@ -16,9 +19,8 @@ export default defineConfig({
     },
     sourcemap: true,
     devtool: 'source-map',
-    watch: true,
     target: "es2015",
-    outDir: '../public_html/theme/',
+    outDir: '../dist/',
     emptyOutDir: false,
   },
 });
